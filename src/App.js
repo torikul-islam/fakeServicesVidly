@@ -7,6 +7,7 @@ import NotFound from './components/NotFound';
 import Navbar from "./components/Navbar";
 import MovieForm from './components/MovieForm';
 import LoginForm from "./components/LoginForm";
+import ImageUpload from './firebase/imageupload';
 import "./App.css";
 
 
@@ -17,6 +18,7 @@ class App extends Component {
         <Navbar></Navbar>
         <main className="container">
           <Switch>
+            <Route path="/firebase" component={ImageUpload}></Route>
             <Route path="/login" component={LoginForm}></Route>
             <Route path="/movies/:id" component={MovieForm}></Route>
             <Route path="/movies" component={Movies}></Route>

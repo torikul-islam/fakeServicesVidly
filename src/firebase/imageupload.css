@@ -1,0 +1,11 @@
+.load-bar {
+    height: 20px;
+    width: 0px;
+    background: lime;
+    animation: grow 5s linear forwards;
+  }
+  .preview-image img{
+    height: 75px;
+    width: 80px;
+    margin-top: 2%
+  }
