@@ -1789,7 +1789,7 @@ Create React App doesn’t include any tools for this by default, but you can ea
 
 ![Storybook for React Demo](http://i.imgur.com/7CIAWpB.gif)
 
-You can also deploy your Storybook or style guide as a static app. This way, everyone in your team can view and review different states of UI components without starting a backend server or creating an account in your app.
+You can also deploy your Storybook or style guide as a static app. This way, everyone in your team can view and review different states of UI components without starting a backend server or creating an data in your app.
 
 ### Getting Started with Storybook
 
@@ -1902,7 +1902,7 @@ or unreliable network.
 ### Offline-First Considerations
 
 If you do decide to opt-in to service worker registration, please take the
-following into account:
+following into data:
 
 1. After the initial caching is done, the [service worker lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
 controls when updated content ends up being shown to users. In order to guard against
@@ -2162,7 +2162,7 @@ See [this](https://medium.com/@strid/host-create-react-app-on-azure-986bc40d5bf2
 
 ### [Firebase](https://firebase.google.com/)
 
-Install the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase account](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase account.
+Install the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase data](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase data.
 
 Then run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.
 
@@ -2445,7 +2445,7 @@ See this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-t
 
 ### [Surge](https://surge.sh/)
 
-Install the Surge CLI if you haven’t already by running `npm install -g surge`. Run the `surge` command and log in you or create a new account.
+Install the Surge CLI if you haven’t already by running `npm install -g surge`. Run the `surge` command and log in you or create a new data.
 
 When asked about the project path, make sure to specify the `build` folder, for example:
 
