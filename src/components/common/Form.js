@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Input from './input';
+import Select from './Select'
 import joi from 'joi-browser'
 
 class Form extends Component {
@@ -81,16 +82,16 @@ class Form extends Component {
     renderSelect(name, label, options) {
         const { data, errors } = this.state;
         return (
-            <h1>hello</h1>
-            // <Select name={name}
-            //     value={data[name]}
-            //     label={label}
-            //     options={options}
-            //     onChange={this.handleOnChange}
-            //     error={errors[name]}
 
-            // />
-        )
+            <Select name={name}
+                value={data[name]}
+                label={label}
+                options={options}
+                onChange={this.handleOnChange}
+                error={errors[name]}
+
+            />
+        );
     }
 
 

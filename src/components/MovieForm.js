@@ -24,7 +24,7 @@ class MovieForm extends Form {
             .required()
             .label("Title"),
 
-        genres: Joi.string()
+        genreId: Joi.string()
             .required()
             .label("Genre"),
 
@@ -45,28 +45,28 @@ class MovieForm extends Form {
     componentDidMount() {
         const genres = getGenres();
 
-        this.setState({ genres: genres })
+        this.setState({ genres });
 
         const movieId = this.props.match.params.id;
+
         if (movieId === "new") return;
 
         const movie = getMovie(movieId);
-        if (!movie) return this.props.history.replace("/not-found")
 
-        this.setState({
-            data: this.mapToViewModel(movie)
-        });
+        // if (!movie) return this.props.history.replace("/not-found")
+
+        // this.setState({ data: this.mapToViewModel(movie) });
     }
 
-    mapToViewModel(movie) {
-        return {
-            _id: movie._id,
-            title: movie.title,
-            genreId: movie.genre._id,
-            numberInStock: movie.numberInStock,
-            dailyRentalRate: movie.dailyRentalRate
-        }
-    }
+    // mapToViewModel = (movie) => {
+    //     return {
+    //         _id: movie._id,
+    //         title: movie.title,
+    //         genreId: movie.genre._id,
+    //         numberInStock: movie.numberInStock,
+    //         dailyRentalRate: movie.dailyRentalRate
+    //     }
+    // }
 
     doSubmit = () => {
         saveMovie(this.state.data);
@@ -85,7 +85,6 @@ class MovieForm extends Form {
                     {this.renderInput("numberInStock", "Number in Stock", "number")}
                     {this.renderInput("dailyRentalRate", "Rate")}
                     {this.renderButton("Save")}
-
                 </form>
             </div>
         );
